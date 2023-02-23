@@ -12,8 +12,10 @@ class Brick{
 
     struct Bricks {
         // 블럭 속성 정의
-        var color = UIColor
+        var color = UIColor()
         var points = Array<CGPoint>()
         var brickSize = 35
+        let zPosition = CGFloat(1)
+        var brickName = String()
     }
 }
