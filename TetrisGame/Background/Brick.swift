@@ -20,11 +20,16 @@ class Brick{
     }
     
     // 새로운 블럭을 가져오는 함수 정의
-//    func bricks() -> Brick {
-//        var bricks = Bricks()
-//
-//        var brick1 = [CGPoint]()
-//        brick1.append(CGPoint(x: 0, y: 0)) // 각각의 블럭이 처음에 가지고 있는 위치값 집어넣기
-//
-//    }
+    func bricks() -> Brick {
+        var bricks = Bricks()
+
+        var brick1 = [CGPoint]()
+        
+        // 하나의 테트리스 블럭 모양 정의
+        brick1.append(CGPoint(x: 0, y: 0)) // 각각의 블럭이 처음에 가지고 있는 위치값 집어넣기
+        brick1.append(CGPoint(x: 1, y: 0))
+        brick1.append(CGPoint(x: -1, y: 0))
+        brick1.append(CGPoint(x: 0, y: 1))
+
+    }
 }
