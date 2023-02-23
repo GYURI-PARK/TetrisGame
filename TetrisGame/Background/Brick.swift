@@ -20,7 +20,7 @@ class Brick{
     }
     
     // 새로운 블럭을 가져오는 함수 정의
-    func bricks() -> Brick{
+    func bricks() -> Bricks{
         var bricks = [Bricks]()
 
         // 하나의 테트리스 블럭 모양 정의
