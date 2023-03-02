@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D4211F429B0E30000322210 /* BrickGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4211F329B0E30000322210 /* BrickGenerator.swift */; };
 		5DA20AFB29A7B95600CDCBB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20AFA29A7B95600CDCBB7 /* AppDelegate.swift */; };
 		5DA20B0129A7B95600CDCBB7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20B0029A7B95600CDCBB7 /* GameScene.swift */; };
 		5DA20B0329A7B95600CDCBB7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20B0229A7B95600CDCBB7 /* GameViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D4211F329B0E30000322210 /* BrickGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickGenerator.swift; sourceTree = "<group>"; };
 		5DA20AF729A7B95600CDCBB7 /* TetrisGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetrisGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA20AFA29A7B95600CDCBB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA20B0029A7B95600CDCBB7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				5DC76A5029A7BE5A00A0A596 /* BackGround.swift */,
 				5DC76A5529A7C6C200A0A596 /* Brick.swift */,
+				5D4211F329B0E30000322210 /* BrickGenerator.swift */,
 			);
 			path = Background;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				5DA20B0129A7B95600CDCBB7 /* GameScene.swift in Sources */,
 				5DA20B0329A7B95600CDCBB7 /* GameViewController.swift in Sources */,
 				5DA20AFB29A7B95600CDCBB7 /* AppDelegate.swift in Sources */,
+				5D4211F429B0E30000322210 /* BrickGenerator.swift in Sources */,
 				5DC76A5129A7BE5A00A0A596 /* BackGround.swift in Sources */,
 				5DC76A5429A7C3D700A0A596 /* Variables.swift in Sources */,
 				5DC76A5629A7C6C200A0A596 /* Brick.swift in Sources */,
