@@ -12,4 +12,5 @@ struct Variables {
     static var backarrays = [[Int]]()
     static var scene = SKScene()
     // main에 있는 scene 받아오기
+    static var brickValue = Brick().bricks()
 }

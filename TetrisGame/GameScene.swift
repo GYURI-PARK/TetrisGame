@@ -13,6 +13,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        Variables.scene = self
+        // scene 초기화
+        
         let bg = BackGround()
         // 만들어진 2차배열을 다른곳에서도 사용 가능하도록 전역변수로 설정
         checkBrick()

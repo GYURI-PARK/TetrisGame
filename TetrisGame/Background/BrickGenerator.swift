@@ -10,6 +10,7 @@ import SpriteKit
 
 class BrickGenerator {
     
+    let brickValue = Variables.brickValue
     init() {
         
     }
