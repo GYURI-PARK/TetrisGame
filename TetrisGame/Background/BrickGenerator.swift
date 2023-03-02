@@ -12,6 +12,11 @@ class BrickGenerator {
     
     let brickValue = Variables.brickValue
     init() {
+        let brick = brickValue.points
+        for item in brick {
+            let x = item.x
+            let y = item.y
+        }
         
     }
 }
