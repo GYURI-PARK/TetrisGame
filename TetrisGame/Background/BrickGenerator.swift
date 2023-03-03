@@ -19,6 +19,12 @@ class BrickGenerator {
             
             // Arrary에 값 입력
             Variables.backarrays[y][x] = 1
+            
+            // 블럭 화면에 띄우기
+            let xValue = x * brickValue.brickSize
+            let yValye = y * brickValue.brickSize
+            let brick = SKSpriteNode()
+            
         }
         
     }
