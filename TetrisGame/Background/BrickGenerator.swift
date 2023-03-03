@@ -22,9 +22,14 @@ class BrickGenerator {
             
             // 블럭 화면에 띄우기
             let xValue = x * brickValue.brickSize
-            let yValye = y * brickValue.brickSize
+            let yValue = y * brickValue.brickSize
             let brick = SKSpriteNode()
-            
+            brick.color = brickValue.color
+            brick.size = CGSize(width: brickValue.brickSize, height: brickValue.brickSize)
+            brick.name = brickValue.brickName
+            brick.zPosition = brickValue.zPosition
+            brick.position = CGPoint(x: xValue, y: yValue)
+            Variables.scene.addChild(brick)
         }
         
     }
