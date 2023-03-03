@@ -16,6 +16,9 @@ class BrickGenerator {
         for item in brick {
             let x = Int(item.x) + Variables.dx
             let y = Int(item.y) + Variables.dy
+            
+            // Arrary에 값 입력
+            Variables.backarrays[y][x] = 1
         }
         
     }

@@ -18,6 +18,7 @@ class GameScene: SKScene {
         
         let bg = BackGround()
         // 만들어진 2차배열을 다른곳에서도 사용 가능하도록 전역변수로 설정
+        let generator = BrickGenerator()
         checkBrick()
     }
     
