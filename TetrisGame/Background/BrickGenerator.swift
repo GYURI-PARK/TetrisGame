@@ -25,7 +25,7 @@ class BrickGenerator {
             let yValue = y * brickValue.brickSize
             let brick = SKSpriteNode()
             brick.color = brickValue.color
-            brick.size = CGSize(width: brickValue.brickSize, height: brickValue.brickSize)
+            brick.size = CGSize(width: brickValue.brickSize - Variables.gap, height: brickValue.brickSize - Variables.gap)
             brick.name = brickValue.brickName
             brick.zPosition = brickValue.zPosition
             brick.position = CGPoint(x: xValue, y: -yValue)
