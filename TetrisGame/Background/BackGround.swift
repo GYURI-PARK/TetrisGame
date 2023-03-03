@@ -23,4 +23,14 @@ class BackGround {
     init() {
         Variables.backarrays = Array(repeating: Array(repeating: 0, count: row), count: col)
     }
+    
+    // 테두리 (벽) 만들기
+    func bg(){
+        for i in 0..<row{
+            Variables.backarrays[col-1][i] = 1
+        }
+        for i in 0..<col-1 {
+            
+        }
+    }
 }
