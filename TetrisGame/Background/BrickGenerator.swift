@@ -28,7 +28,7 @@ class BrickGenerator {
             brick.size = CGSize(width: brickValue.brickSize, height: brickValue.brickSize)
             brick.name = brickValue.brickName
             brick.zPosition = brickValue.zPosition
-            brick.position = CGPoint(x: xValue, y: yValue)
+            brick.position = CGPoint(x: xValue, y: -yValue)
             Variables.scene.addChild(brick)
         }
         
