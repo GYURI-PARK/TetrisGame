@@ -21,4 +21,7 @@ struct Variables {
     
     // gap을 이용해 선 표시해주기 -> gap만큼 brick size에서 빼주기
     static var gap = 1
+    
+    // 시작점 초기화
+    static var startPoint = CGPoint()
 }

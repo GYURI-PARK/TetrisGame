@@ -21,10 +21,14 @@ class BackGround {
     
     let brickSize = Variables.brickValue.brickSize
     let gap = Variables.gap
+    let scene = Variables.scene
     
     // 초기화 후 arrays에 값 집어넣기
     init() {
         Variables.backarrays = Array(repeating: Array(repeating: 0, count: row), count: col)
+        // 시작포인트는 width 값에서 벽블럭의 값을 빼준 값에 나누기 2 -> 중간으로 이동
+        let xValue = ((Int(scene.frame.width) - row * brickSize) + brickSize) / 2
+        Variables.startPoint = CGPoint(x: xValue, y: 100)
         bg()
     }
     
@@ -32,15 +36,19 @@ class BackGround {
     func bg(){
         for i in 0..<row{
             Variables.backarrays[col-1][i] = 1
+            Variables.scene.addChild(wall(x: i, y: col-1))
         }
         for i in 0..<col-1 {
             Variables.backarrays[i][0] = 1
+            Variables.scene.addChild(wall(x: 0, y: i))
         }
         for i in 0..<col-1 {
             Variables.backarrays[i][row-1] = 1
+            Variables.scene.addChild(wall(x: row-1, y: i))
         }
         for i in 0..<row {
             Variables.backarrays[0][i] = 1
+            Variables.scene.addChild(wall(x: i, y: 0))
         }
     }
     
@@ -51,9 +59,9 @@ class BackGround {
         brick.color = .blue
         brick.name = "wall"
         brick.zPosition = 1
-        let xValue = x * brickSize
-        let yValue = y * brickSize
-        brick.position = CGPoint(x: xValue, y: yValue)
+        let xValue = x * brickSize + Int(Variables.startPoint.x)
+        let yValue = y * brickSize + Int(Variables.startPoint.y)
+        brick.position = CGPoint(x: xValue, y: -yValue)
         return brick
     }
 }
