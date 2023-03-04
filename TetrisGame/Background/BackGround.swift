@@ -22,6 +22,7 @@ class BackGround {
     // 초기화 후 arrays에 값 집어넣기
     init() {
         Variables.backarrays = Array(repeating: Array(repeating: 0, count: row), count: col)
+        bg()
     }
     
     // 테두리 (벽) 만들기
@@ -39,4 +40,4 @@ class BackGround {
             Variables.backarrays[0][i] = 1
         }
     }
-}ㅓㅓ
+}
