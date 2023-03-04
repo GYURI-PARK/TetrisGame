@@ -30,7 +30,13 @@ class BackGround {
             Variables.backarrays[col-1][i] = 1
         }
         for i in 0..<col-1 {
-            
+            Variables.backarrays[i][0] = 1
+        }
+        for i in 0..<col-1 {
+            Variables.backarrays[i][row-1] = 1
+        }
+        for i in 0..<row {
+            Variables.backarrays[0][i] = 1
         }
     }
-}
+}ㅓㅓ
