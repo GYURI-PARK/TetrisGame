@@ -19,6 +19,9 @@ class BackGround {
     let row = 10
     let col = 20
     
+    let brickSize = Variables.brickValue.brickSize
+    let gap = Variables.gap
+    
     // 초기화 후 arrays에 값 집어넣기
     init() {
         Variables.backarrays = Array(repeating: Array(repeating: 0, count: row), count: col)
@@ -39,5 +42,18 @@ class BackGround {
         for i in 0..<row {
             Variables.backarrays[0][i] = 1
         }
+    }
+    
+    // 테두리 블럭 생성
+    func wall(x : Int, y : Int) -> SKSpriteNode{
+        let brick = SKSpriteNode()
+        brick.size = CGSize(width: brickSize - gap, height: brickSize - gap)
+        brick.color = .blue
+        brick.name = "wall"
+        brick.zPosition = 1
+        let xValue = x * brickSize
+        let yValue = y * brickSize
+        brick.position = CGPoint(x: xValue, y: yValue)
+        return brick
     }
 }
