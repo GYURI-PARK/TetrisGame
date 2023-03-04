@@ -21,8 +21,8 @@ class BrickGenerator {
             Variables.backarrays[y][x] = 1
             
             // 블럭 화면에 띄우기
-            let xValue = x * brickValue.brickSize
-            let yValue = y * brickValue.brickSize
+            let xValue = x * brickValue.brickSize + Int(Variables.startPoint.x)
+            let yValue = y * brickValue.brickSize + Int(Variables.startPoint.y)
             let brick = SKSpriteNode()
             brick.color = brickValue.color
             brick.size = CGSize(width: brickValue.brickSize - Variables.gap, height: brickValue.brickSize - Variables.gap)
