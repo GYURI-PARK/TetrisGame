@@ -16,9 +16,9 @@ class GameScene: SKScene {
         Variables.scene = self
         // scene 초기화
         
-        let bg = BackGround()
+        _ = BackGround()
         // 만들어진 2차배열을 다른곳에서도 사용 가능하도록 전역변수로 설정
-        let generator = BrickGenerator()
+        _ = BrickGenerator()
         checkBrick()
     }
     
