@@ -24,4 +24,6 @@ struct Variables {
     
     // 시작점 초기화
     static var startPoint = CGPoint()
+    
+    static var brickArrays = Array<CGPoint>()
 }
