@@ -58,6 +58,9 @@
 		5DC76A5329A7C3D700A0A596 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		5DC76A5529A7C6C200A0A596 /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
 		5DC78BD129BA484E00DD85D5 /* LeftButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftButton.swift; sourceTree = "<group>"; };
+		5DC78BD529BE162E00DD85D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5DC78BD629BE1EC000DD85D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5DC78BD729BE1EED00DD85D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		5DA20AF929A7B95600CDCBB7 /* TetrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				5DC78BD529BE162E00DD85D5 /* Info.plist */,
 				5DC78BD029BA481800DD85D5 /* Functions */,
 				5DC76A5229A7C3B700A0A596 /* Variables */,
 				5DC76A4F29A7BDF500A0A596 /* Background */,
@@ -124,6 +128,7 @@
 		5DA20B1329A7B95700CDCBB7 /* TetrisGameTests */ = {
 			isa = PBXGroup;
 			children = (
+				5DC78BD629BE1EC000DD85D5 /* Info.plist */,
 				5DA20B1429A7B95700CDCBB7 /* TetrisGameTests.swift */,
 			);
 			path = TetrisGameTests;
@@ -132,6 +137,7 @@
 		5DA20B1D29A7B95700CDCBB7 /* TetrisGameUITests */ = {
 			isa = PBXGroup;
 			children = (
+				5DC78BD729BE1EED00DD85D5 /* Info.plist */,
 				5DA20B1E29A7B95700CDCBB7 /* TetrisGameUITests.swift */,
 				5DA20B2029A7B95700CDCBB7 /* TetrisGameUITestsLaunchTests.swift */,
 			);
@@ -481,6 +487,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGame/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TetrisGame;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -511,6 +518,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGame/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TetrisGame;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.arcade-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -541,6 +549,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGameTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyuri.TetrisGameTests;
@@ -561,6 +571,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGameTests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyuri.TetrisGameTests;
@@ -580,6 +592,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGameUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyuri.TetrisGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -598,6 +612,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XF4GNZL7MP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TetrisGameUITests/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyuri.TetrisGameUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
