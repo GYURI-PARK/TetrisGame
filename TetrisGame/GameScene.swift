@@ -37,9 +37,9 @@ class GameScene: SKScene {
         let touch = touches.first
         let location = touch?.location(in: self)
         let node = nodes(at: location!)
-        for item in node {
+        for item in node{
             if item.name == "left"{
-                
+                leftButton?.brickMoveLeft()
             }
         }
     }
