@@ -22,6 +22,7 @@ class LeftButton {
     func brickMoveLeft(){
         if isMovale(){
             Variables.dx -= 1
+            var action = SKAction()
             for item in Variables.brickArrays{
                 let x = Int(item.x) + Variables.dx
                 let y = Int(item.y) + Variables.dy
