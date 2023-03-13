@@ -9,15 +9,27 @@ import Foundation
 import SpriteKit
 
 class LeftButton {
+    let btn = SKSpriteNode()
     
     init() {
-        let btn = SKSpriteNode()
+        
         btn.texture = SKTexture(imageNamed: "left_btn1")
         btn.size = CGSize(width: 50, height: 50)
         btn.name = "left"
         btn.position = CGPoint(x: 50, y: -Int(Variables.scene.frame.height)+50)
         Variables.scene.addChild(btn)
     } // LeftButton정의 후 초기화 -> 메인 클래스에 LeftButton 인스턴스 생성
+    
+    func anim(){
+        var textures = Array<SKTexture>()
+        for i in 1...15{
+            let name = "left_btn\(i)"
+            let texture = SKTexture(imageNamed: name)
+            textures.append(texture)
+        }
+        let action = SKAction.animate(with: textures, timePerFrame: 0.03)
+        btn.run(action)
+    }
     
     func brickMoveLeft(){
         if isMovale(){
@@ -29,9 +41,13 @@ class LeftButton {
                 
                 Variables.backarrays[y][x+1] -= 1
                 Variables.backarrays[y][x] += 1
-                action = SKAction.moveBy(x: CGFloat(Variables.brickValue.brickSize), y: 0, duration: 0.1)
+                action = SKAction.moveBy(x: -CGFloat(Variables.brickValue.brickSize), y: 0, duration: 0.1)
                 Variables.brickNode[i].run(action)
             }
+            
+            // 버튼 클릭 애니메이션
+            anim()
+            
         }
     }
     
