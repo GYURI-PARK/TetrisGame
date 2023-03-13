@@ -11,6 +11,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     var leftButton : LeftButton?
+    var rightButton : RightButton?
     override func didMove(to view: SKView) {
         
         Variables.scene = self
@@ -22,6 +23,7 @@ class GameScene: SKScene {
         // checkBrick()
         
         leftButton = LeftButton()
+        rightButton = RightButton()
     }
     
     // 콘솔창에서 배열 확인 편하게 하려고 만드는거
@@ -40,6 +42,9 @@ class GameScene: SKScene {
         for item in node{
             if item.name == "left"{
                 leftButton?.brickMoveLeft()
+            }
+            if item.name == "right"{
+                rightButton?.brickMoveRight()
             }
         }
     }
