@@ -26,4 +26,5 @@ struct Variables {
     static var startPoint = CGPoint()
     
     static var brickArrays = Array<CGPoint>()
+    static var brickNode = Array<SKSpriteNode>()
 }

@@ -23,12 +23,14 @@ class LeftButton {
         if isMovale(){
             Variables.dx -= 1
             var action = SKAction()
-            for item in Variables.brickArrays{
+            for (i, item) in Variables.brickArrays.enumerated(){
                 let x = Int(item.x) + Variables.dx
                 let y = Int(item.y) + Variables.dy
                 
                 Variables.backarrays[y][x+1] -= 1
                 Variables.backarrays[y][x] += 1
+                action = SKAction.moveBy(x: CGFloat(Variables.brickValue.brickSize), y: 0, duration: 0.1)
+                Variables.brickNode[i].run(action)
             }
         }
     }
