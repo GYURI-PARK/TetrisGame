@@ -24,6 +24,9 @@ class RotationButton{
         if isRotatable(){
             let sinX = CGFloat(1)
             let cosX = CGFloat(0)
+            var rotatedBrick = Array<CGPoint>()
+            // 블럭 이미지 회전
+            var action = SKAction()
             for item in Variables.brickArrays{
                 let r = item.y
                 let c = item.x
@@ -33,8 +36,22 @@ class RotationButton{
                 Variables.backarrays[currentY][currentX] -= 1
                 let newBrickX = (c * cosX) - (r * sinX)
                 let newBrickY = (c * sinX) + (r * cosX)
+                rotatedBrick.append(CGPoint(x: newBrickX, y: newBrickY))
                 
+                // 회전한 블럭의 위치에 값 +1 해주기
+                let newX = Int(newBrickX) + Variables.dx
+                let newY = Int(newBrickY) + Variables.dy
+                Variables.backarrays[newY][newX] += 1
+                
+                let xValue = Int(newX) * Variables.brickValue.brickSize + Int(Variables.startPoint.x)
+                let yValue = Int(newY) * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
+
             }
+            
+            Variables.brickArrays = rotatedBrick
+        }
+        for item in Variables.backarrays{
+            print(item)
         }
     }
     
