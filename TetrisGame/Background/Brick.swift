@@ -75,6 +75,6 @@ class Brick{
         
         // 7개의 블럭들 중 랜덤으로 bricks에 넣어주기
         let random = Int.random(in: 0..<7)
-        return bricks[random]
+        return bricks[1]
     }
 }

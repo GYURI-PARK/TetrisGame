@@ -20,4 +20,26 @@ class RotationButton{
         Variables.scene.addChild(btn)
     }
     
+    func brickRoation(){
+        if isRotatable(){
+            let sinX = CGFloat(1)
+            let cosX = CGFloat(0)
+            for item in Variables.brickArrays{
+                let r = item.y
+                let c = item.x
+                let currentX = Int(item.x) + Variables.dx
+                let currentY = Int(item.y) + Variables.dy
+                // 현재 블럭위치에 해당하는 배열값을 0으로 변경
+                Variables.backarrays[currentY][currentX] -= 1
+                let newBrickX = (c * cosX) - (r * sinX)
+                let newBrickY = (c * sinX) + (r * cosX)
+                
+            }
+        }
+    }
+    
+    func isRotatable() -> Bool{
+        return true
+    }
+    
 }
