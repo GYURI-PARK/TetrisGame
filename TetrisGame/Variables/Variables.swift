@@ -17,7 +17,7 @@ struct Variables {
     
     // 시작점 설정 = 블럭의 기준점
     static var dx = 4
-    static var dy = 2
+    static var dy = 3
     
     // gap을 이용해 선 표시해주기 -> gap만큼 brick size에서 빼주기
     static var gap = 1
