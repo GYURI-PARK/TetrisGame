@@ -10,10 +10,11 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    // Function 폴더에 각각의 클래스 정의 후 메인(Gamescene)에서 인스턴스 정의
+    // Function 폴더에 각각의 클래스 정의 후 메인 클래스(Gamescene)에서 인스턴스 생성해주기
     var leftButton : LeftButton?
     var rightButton : RightButton?
     var rotationButton : RotationButton?
+    var downButton : DownButton?
     
     override func didMove(to view: SKView) {
         
@@ -28,6 +29,7 @@ class GameScene: SKScene {
         leftButton = LeftButton()
         rightButton = RightButton()
         rotationButton = RotationButton()
+        downButton = DownButton()
     }
     
     // 콘솔창에서 배열 확인 편하게 하려고 만드는거

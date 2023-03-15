@@ -18,6 +18,7 @@
 		5DA20B1529A7B95700CDCBB7 /* TetrisGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20B1429A7B95700CDCBB7 /* TetrisGameTests.swift */; };
 		5DA20B1F29A7B95700CDCBB7 /* TetrisGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20B1E29A7B95700CDCBB7 /* TetrisGameUITests.swift */; };
 		5DA20B2129A7B95700CDCBB7 /* TetrisGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20B2029A7B95700CDCBB7 /* TetrisGameUITestsLaunchTests.swift */; };
+		5DB21D8D29C20A38001122A4 /* DownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB21D8C29C20A38001122A4 /* DownButton.swift */; };
 		5DC76A5129A7BE5A00A0A596 /* BackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC76A5029A7BE5A00A0A596 /* BackGround.swift */; };
 		5DC76A5429A7C3D700A0A596 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC76A5329A7C3D700A0A596 /* Variables.swift */; };
 		5DC76A5629A7C6C200A0A596 /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC76A5529A7C6C200A0A596 /* Brick.swift */; };
@@ -57,6 +58,7 @@
 		5DA20B1A29A7B95700CDCBB7 /* TetrisGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA20B1E29A7B95700CDCBB7 /* TetrisGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisGameUITests.swift; sourceTree = "<group>"; };
 		5DA20B2029A7B95700CDCBB7 /* TetrisGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DB21D8C29C20A38001122A4 /* DownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownButton.swift; sourceTree = "<group>"; };
 		5DC76A5029A7BE5A00A0A596 /* BackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGround.swift; sourceTree = "<group>"; };
 		5DC76A5329A7C3D700A0A596 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		5DC76A5529A7C6C200A0A596 /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				5DC78BD129BA484E00DD85D5 /* LeftButton.swift */,
 				5DC78BD829BF653100DD85D5 /* RightButton.swift */,
 				5D09F5A029C0862D00EAB195 /* RotationButton.swift */,
+				5DB21D8C29C20A38001122A4 /* DownButton.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				5D4211F429B0E30000322210 /* BrickGenerator.swift in Sources */,
 				5DC78BD929BF653100DD85D5 /* RightButton.swift in Sources */,
 				5DC76A5129A7BE5A00A0A596 /* BackGround.swift in Sources */,
+				5DB21D8D29C20A38001122A4 /* DownButton.swift in Sources */,
 				5D09F5A129C0862D00EAB195 /* RotationButton.swift in Sources */,
 				5DC76A5429A7C3D700A0A596 /* Variables.swift in Sources */,
 				5DC76A5629A7C6C200A0A596 /* Brick.swift in Sources */,

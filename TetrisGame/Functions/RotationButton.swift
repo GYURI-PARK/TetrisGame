@@ -16,7 +16,7 @@ class RotationButton{
         btn.size = CGSize(width: 50, height: 50)
         btn.name = "rotation"
         btn.zPosition = 1
-        btn.position = CGPoint(x: Int(Variables.scene.frame.width) / 2 , y: -Int(Variables.scene.frame.height) + 50)
+        btn.position = CGPoint(x: Int(Variables.scene.frame.width) / 2 , y: -Int(Variables.scene.frame.height) + 40)
         Variables.scene.addChild(btn)
     }
     
