@@ -34,4 +34,44 @@ class DownButton {
         action = SKAction.animate(with: textures, timePerFrame: 0.03)
         btn.run(action)
     }
+    
+    // 블럭을 아래로 내리는 함수
+    func brickDown(){
+        if isbrickDownable(){
+            possibleDown()
+        } else{
+            impossibleDown()
+        }
+    }
+    
+    // 블럭이 아래로 내려갈 수 있는 경우
+    func possibleDown(){
+        Variables.dy += 1
+        var action = SKAction()
+        for (i, item) in Variables.brickArrays.enumerated(){
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            
+            Variables.backarrays[y - 1][x] -= 1
+            Variables.backarrays[y][x] += 1
+            action = SKAction.moveBy(x: 0, y: -CGFloat(Variables.brickValue.brickSize), duration: 0.1)
+            Variables.brickNode[i].run(action)
+        }
+        
+    }
+    
+    func impossibleDown(){
+    }
+    
+    func isbrickDownable() -> Bool{
+        for item in Variables.brickArrays{
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            
+            if Variables.backarrays[y+1][x] == 2{
+                return false
+            }
+        }
+        return true
+    }
 }

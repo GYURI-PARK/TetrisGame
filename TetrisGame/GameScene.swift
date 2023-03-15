@@ -55,6 +55,9 @@ class GameScene: SKScene {
             if item.name == "rotation"{
                 rotationButton?.brickRoation()
             }
+            if item.name == "down"{
+                downButton?.brickDown()
+            }
         }
     }
 }

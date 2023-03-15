@@ -51,24 +51,17 @@ class LeftButton {
         }
     }
     
-    // 블럭의 가장 왼쪽 좌표의 왼쪽 값이 1일 경우 더 이상 왼쪽으로 이동하지 못하므로
-    // 최좌측점을 찾기 위한 함수가 필요하다.
+    // 가장자리 배열값이 2이므로 x-1 위치의 블럭이 2인지 판별 -> 더 이상 왼쪽으로 갈수있는지 없는지 판별
     func isMovale() -> Bool {
         
-        // 블럭 최좌측 포인트 찾기
-        var left = Variables.brickArrays[0]
-        for i in Variables.brickArrays{
-            if left.x > i.x {
-                left = i
+        for item in Variables.brickArrays{
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            if Variables.backarrays[y][x - 1] == 2{
+                return false
             }
         }
-        // 최좌측점의 왼쪽값이 1인지 아닌지 판별
-        let xValue = Int(left.x) + Variables.dx - 1
-        if Variables.backarrays[Variables.dy][xValue] != 0{
-            return false
-        } else{
-            return true
-        }
+        return true
     }
     
 }
