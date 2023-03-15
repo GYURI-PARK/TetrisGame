@@ -61,6 +61,25 @@ class DownButton {
     }
     
     func impossibleDown(){
+        // 1. 블럭의 위치 값을 2로 변경
+        for item in Variables.brickArrays{
+            let x = Int(item.x) + Variables.dx
+            let y = Int(item.y) + Variables.dy
+            Variables.backarrays[y][x] = 2
+            
+            // 2. 새로운 블럭 생성 -> Variables에 추가 (blocked)
+            let blocked = SKSpriteNode()
+            blocked.color = .gray
+            blocked.size = CGSize(width: Variables.brickValue.brickSize - Variables.gap, height: Variables.brickValue.brickSize - Variables.gap)
+            blocked.name = "blocked"
+            let xValue = x * Variables.brickValue.brickSize + Int(Variables.startPoint.x)
+            let yValue = y * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
+            blocked.position = CGPoint(x: xValue, y: -yValue)
+            Variables.scene.addChild(blocked)
+        }
+        
+        // 3. 현재 블럭 삭제
+        // 4. 새로운 SKNode 생성
     }
     
     func isbrickDownable() -> Bool{

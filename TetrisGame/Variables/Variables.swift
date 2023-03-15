@@ -27,4 +27,7 @@ struct Variables {
     
     static var brickArrays = Array<CGPoint>()
     static var brickNode = Array<SKSpriteNode>()
+    
+    // impossibleDown -> 새로운 블럭 생성
+    static var blockedArrays = Array<SKSpriteNode>()
 }
