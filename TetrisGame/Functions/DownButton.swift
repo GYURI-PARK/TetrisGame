@@ -76,9 +76,12 @@ class DownButton {
             let yValue = y * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
             blocked.position = CGPoint(x: xValue, y: -yValue)
             Variables.scene.addChild(blocked)
+            Variables.blockedArrays.append(blocked)
         }
-        
         // 3. 현재 블럭 삭제
+        for item in Variables.brickNode{
+            item.removeFromParent()
+        }
         // 4. 새로운 SKNode 생성
     }
     
