@@ -15,6 +15,7 @@ class GameScene: SKScene {
     var rightButton : RightButton?
     var rotationButton : RotationButton?
     var downButton : DownButton?
+    var updateTime = 0.0
     
     override func didMove(to view: SKView) {
         
@@ -40,6 +41,16 @@ class GameScene: SKScene {
         }
     }
     
+    override func update(_ currentTime: TimeInterval) {
+        if updateTime == 0{
+            updateTime = currentTime
+        }
+        if currentTime - updateTime > 0.7 {
+            updateTime = currentTime
+            downButton?.brickDown()
+        }
+    }
+    
     // 터치 이벤트 처리
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
@@ -56,7 +67,9 @@ class GameScene: SKScene {
                 rotationButton?.brickRoation()
             }
             if item.name == "down"{
-                downButton?.brickDown()
+                while(downButton?.isbrickDownable())! {
+                    downButton?.brickDown()
+                }
             }
         }
     }

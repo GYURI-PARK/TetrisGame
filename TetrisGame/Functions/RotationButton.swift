@@ -55,6 +55,18 @@ class RotationButton{
         }
     }
     
+    func anim(){
+        var textures = Array<SKTexture>()
+        var action = SKAction()
+        for i in 1...15{
+            let name = "rotaion_btn\(i)"
+            let texture = SKTexture(imageNamed: name)
+            textures.append(texture)
+        }
+        action = SKAction.animate(with: textures, timePerFrame: 0.03)
+        btn.run(action)
+    }
+    
     func isRotatable() -> Bool{
         let sinX = CGFloat(1)
         let cosX = CGFloat(0)
@@ -69,6 +81,7 @@ class RotationButton{
                 }
             }
         }
+        anim()
         return true
     }
     
