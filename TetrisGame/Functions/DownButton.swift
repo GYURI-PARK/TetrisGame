@@ -95,6 +95,23 @@ class DownButton {
     // 4. 새로운 SKNode 생성
     func checkDelete(){
         
+        //  블럭에서 중복된 y값 제거 (set 사용)
+        var set = Set<Int>()
+        for item in Variables.brickArrays{
+            let y = Int(item.y) + Variables.dy
+            set.insert(y)
+        }
+        // 가져온 y값으로 행 체크 (0값이 있는지)
+        for y in set.sorted(){
+            // 체크한 행이 0이 포함 되어있지 않으면 실행
+            if !Variables.backarrays[y].contains(0){
+                Variables.backarrays.remove(at: y)
+                Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
+                print("삭제되었습니다.")
+               
+            }
+        }
+        
         // 새로운 brick 생성
         _ = BrickGenerator()
     }
