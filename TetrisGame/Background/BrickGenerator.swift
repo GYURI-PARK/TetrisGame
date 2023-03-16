@@ -10,8 +10,15 @@ import SpriteKit
 
 class BrickGenerator {
     
-    let brickValue = Variables.brickValue
+    
     init() {
+        
+        // 새로 생성될 때 블럭 위치 설정
+        Variables.dx = 4
+        Variables.dy = 2
+        Variables.brickValue = Brick().bricks()
+        
+        let brickValue = Variables.brickValue
         let brick = brickValue.points
         Variables.brickArrays = brick
         Variables.brickNode.removeAll()

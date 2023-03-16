@@ -82,7 +82,21 @@ class DownButton {
         for item in Variables.brickNode{
             item.removeFromParent()
         }
-        // 4. 새로운 SKNode 생성
+        
+        // 데이터 체크
+        for item in Variables.backarrays{
+            print(item)
+        }
+        
+        // 한줄 채워지며 삭제되는 함수
+        checkDelete()
+    }
+    
+    // 4. 새로운 SKNode 생성
+    func checkDelete(){
+        
+        // 새로운 brick 생성
+        _ = BrickGenerator()
     }
     
     func isbrickDownable() -> Bool{
