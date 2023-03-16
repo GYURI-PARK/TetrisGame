@@ -103,16 +103,37 @@ class DownButton {
         }
         // 가져온 y값으로 행 체크 (0값이 있는지)
         for y in set.sorted(){
+            let yValue = y * Variables.brickValue.brickSize + Int(Variables.startPoint.y)
             // 체크한 행이 0이 포함 되어있지 않으면 실행
             if !Variables.backarrays[y].contains(0){
                 Variables.backarrays.remove(at: y)
                 Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
                 print("삭제되었습니다.")
+                
+                for item in Variables.blockedArrays{
+                    // 없어지는 라인이 같은 라인에 있는 경우
+                    if Int(item.position.y) == -yValue{
+                        if let removeItem = Variables.blockedArrays.firstIndex(of: item){
+                            Variables.blockedArrays.remove(at: removeItem)
+                            var action = SKAction()
+                            action = SKAction.fadeOut(withDuration: 0.1)
+                            item.run(action){
+                                item.removeFromParent()
+                            }
+                        }
+                    }
+                    // 현재 라인보다 위에 있는 경우
+                    if Int(item.position.y) > -yValue{
+                        var action = SKAction()
+                        action = SKAction.moveBy(x: 0, y: -CGFloat(Variables.brickValue.brickSize), duration: 0.5)
+                        item.run(action)
+                    }
+                }
                
             }
         }
         
-        // 새로운 brick 생성
+        // 새로운 블럭 생성
         _ = BrickGenerator()
     }
     
