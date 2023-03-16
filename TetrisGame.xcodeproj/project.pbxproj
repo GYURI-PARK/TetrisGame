@@ -24,6 +24,8 @@
 		5DC76A5629A7C6C200A0A596 /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC76A5529A7C6C200A0A596 /* Brick.swift */; };
 		5DC78BD229BA484E00DD85D5 /* LeftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78BD129BA484E00DD85D5 /* LeftButton.swift */; };
 		5DC78BD929BF653100DD85D5 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78BD829BF653100DD85D5 /* RightButton.swift */; };
+		5DCFF4AE29C3179C008F94C1 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCFF4AD29C3179C008F94C1 /* GameOver.swift */; };
+		5DCFF4B029C317CB008F94C1 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DCFF4AF29C317CB008F94C1 /* GameOver.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		5DC78BD629BE1EC000DD85D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5DC78BD729BE1EED00DD85D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5DC78BD829BF653100DD85D5 /* RightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
+		5DCFF4AD29C3179C008F94C1 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		5DCFF4AF29C317CB008F94C1 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +121,12 @@
 		5DA20AF929A7B95600CDCBB7 /* TetrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				5DCFF4AC29C31761008F94C1 /* Scene */,
 				5DC78BD529BE162E00DD85D5 /* Info.plist */,
 				5DC78BD029BA481800DD85D5 /* Functions */,
 				5DC76A5229A7C3B700A0A596 /* Variables */,
 				5DC76A4F29A7BDF500A0A596 /* Background */,
 				5DA20AFA29A7B95600CDCBB7 /* AppDelegate.swift */,
-				5DA20B0029A7B95600CDCBB7 /* GameScene.swift */,
 				5DA20B0229A7B95600CDCBB7 /* GameViewController.swift */,
 				5DA20B0429A7B95600CDCBB7 /* Main.storyboard */,
 				5DA20B0729A7B95700CDCBB7 /* Assets.xcassets */,
@@ -177,6 +181,16 @@
 				5DB21D8C29C20A38001122A4 /* DownButton.swift */,
 			);
 			path = Functions;
+			sourceTree = "<group>";
+		};
+		5DCFF4AC29C31761008F94C1 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				5DA20B0029A7B95600CDCBB7 /* GameScene.swift */,
+				5DCFF4AD29C3179C008F94C1 /* GameOver.swift */,
+				5DCFF4AF29C317CB008F94C1 /* GameOver.sks */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DA20B0629A7B95600CDCBB7 /* Main.storyboard in Resources */,
+				5DCFF4B029C317CB008F94C1 /* GameOver.sks in Resources */,
 				5DA20B0829A7B95700CDCBB7 /* Assets.xcassets in Resources */,
 				5DA20B0B29A7B95700CDCBB7 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -313,6 +328,7 @@
 				5DA20B0129A7B95600CDCBB7 /* GameScene.swift in Sources */,
 				5DA20B0329A7B95600CDCBB7 /* GameViewController.swift in Sources */,
 				5DC78BD229BA484E00DD85D5 /* LeftButton.swift in Sources */,
+				5DCFF4AE29C3179C008F94C1 /* GameOver.swift in Sources */,
 				5DA20AFB29A7B95600CDCBB7 /* AppDelegate.swift in Sources */,
 				5D4211F429B0E30000322210 /* BrickGenerator.swift in Sources */,
 				5DC78BD929BF653100DD85D5 /* RightButton.swift in Sources */,

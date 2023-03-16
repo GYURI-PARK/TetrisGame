@@ -134,8 +134,12 @@ class DownButton {
             }
         }
         
-        // 새로운 블럭 생성
-        _ = BrickGenerator()
+        if isGameOver(deadLine: Variables.dy){
+            
+            // 새로운 블럭 생성
+            _ = BrickGenerator()
+        }
+        
     }
     
     func isbrickDownable() -> Bool{
@@ -148,5 +152,15 @@ class DownButton {
             }
         }
         return true
+    }
+    
+    // 게임오버 기능
+    func isGameOver(deadLine : Int) ->Bool{
+        if deadLine > 2 {
+            return true
+        } else{
+            print("Game OVER")
+            return false
+        }
     }
 }
