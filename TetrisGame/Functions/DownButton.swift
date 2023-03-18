@@ -159,7 +159,7 @@ class DownButton {
         if deadLine > 2 {
             return true
         } else{
-            print("Game OVER")
+            let scene = GameOver(fileNamed: "GameOver")
             return false
         }
     }
