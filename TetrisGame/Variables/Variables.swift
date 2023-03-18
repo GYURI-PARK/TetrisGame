@@ -32,4 +32,8 @@ struct Variables {
     static var blockedArrays = Array<SKSpriteNode>()
     
     static var isPause = false
+    static var nodeGroup = [[SKSpriteNode]]()
+    
+    // nextbrick에 있는 블럭을 brickGenerator에서 사용하기 위해
+    static var newBrickArrays = [Brick.Bricks]()
 }
