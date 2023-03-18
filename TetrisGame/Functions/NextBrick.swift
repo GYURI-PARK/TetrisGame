@@ -46,4 +46,29 @@ class NextBrick {
         Variables.nodeGroup.append(nextBricksArrays)
         Variables.newBrickArrays.append(blockValue)
     }
+    
+    func nextBrickMoveLeft(){
+        // 1. 블럭 삭제 2. 블럭 이동 3. 블럭 삽입
+        
+        // 배열 첫번째 요소 삭제
+        Variables.newBrickArrays.remove(at: 0)
+        for item in Variables.nodeGroup.first! {
+            item.removeFromParent()
+        }
+        Variables.nodeGroup.remove(at: 0) // 데이터도 삭제
+        
+        // 왼쪽으로 이동
+        let action = SKAction.moveBy(x: -100, y: 0, duration: 1)
+        for bricks in Variables.nodeGroup{
+            for item in bricks{
+                item.run(action)
+            }
+        }
+        
+        // 마지막 블럭 생성
+        brickGenerator(brickSpace: 1000)
+        for item in Variables.nodeGroup.last!{
+            Variables.scene.addChild(item)
+        }
+    }
 }
