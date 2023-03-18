@@ -28,6 +28,7 @@
 		5DCFF4B029C317CB008F94C1 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DCFF4AF29C317CB008F94C1 /* GameOver.sks */; };
 		5DF5073C29C57B7C00AF9130 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073B29C57B7C00AF9130 /* StopButton.swift */; };
 		5DF5073E29C5C5D900AF9130 /* NextBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073D29C5C5D900AF9130 /* NextBrick.swift */; };
+		5DF5074029C6235400AF9130 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073F29C6235400AF9130 /* Sounds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		5DCFF4AF29C317CB008F94C1 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		5DF5073B29C57B7C00AF9130 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
 		5DF5073D29C5C5D900AF9130 /* NextBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBrick.swift; sourceTree = "<group>"; };
+		5DF5073F29C6235400AF9130 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				5DB21D8C29C20A38001122A4 /* DownButton.swift */,
 				5DF5073B29C57B7C00AF9130 /* StopButton.swift */,
 				5DF5073D29C5C5D900AF9130 /* NextBrick.swift */,
+				5DF5073F29C6235400AF9130 /* Sounds.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				5DC76A5129A7BE5A00A0A596 /* BackGround.swift in Sources */,
 				5DB21D8D29C20A38001122A4 /* DownButton.swift in Sources */,
 				5D09F5A129C0862D00EAB195 /* RotationButton.swift in Sources */,
+				5DF5074029C6235400AF9130 /* Sounds.swift in Sources */,
 				5DC76A5429A7C3D700A0A596 /* Variables.swift in Sources */,
 				5DC76A5629A7C6C200A0A596 /* Brick.swift in Sources */,
 			);
