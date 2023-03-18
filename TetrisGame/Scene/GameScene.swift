@@ -49,7 +49,9 @@ class GameScene: SKScene {
         }
         if currentTime - updateTime > 0.7 {
             updateTime = currentTime
-            downButton?.brickDown()
+            if !Variables.isPause{
+                downButton?.brickDown()
+            }
         }
     }
     
@@ -72,6 +74,9 @@ class GameScene: SKScene {
                 while(downButton?.isbrickDownable())! {
                     downButton?.brickDown()
                 }
+            }
+            if item.name == "stop"{
+                stopButton?.brickStop()
             }
         }
     }

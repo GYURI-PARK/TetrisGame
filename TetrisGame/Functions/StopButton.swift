@@ -34,4 +34,26 @@ class StopButton {
         action = SKAction.animate(with: textures, timePerFrame: 0.03)
         btn.run(action)
     }
+    
+    func animBack(){
+        var textures = Array<SKTexture>()
+        var action = SKAction()
+        for i in stride(from: 15, through: 1, by: -1){
+            let name = "stop_btn\(i)"
+            let texture = SKTexture(imageNamed: name)
+            textures.append(texture)
+        }
+        action = SKAction.animate(with: textures, timePerFrame: 0.03)
+        btn.run(action)
+    }
+    
+    func brickStop(){
+        if Variables.isPause{
+            animBack()
+            Variables.isPause = false
+        } else{
+            anim()
+            Variables.isPause = true
+        }
+    }
 }

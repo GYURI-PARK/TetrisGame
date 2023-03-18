@@ -30,4 +30,6 @@ struct Variables {
     
     // impossibleDown -> 새로운 블럭 생성
     static var blockedArrays = Array<SKSpriteNode>()
+    
+    static var isPause = false
 }
