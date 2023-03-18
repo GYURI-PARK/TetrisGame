@@ -16,7 +16,9 @@ class BrickGenerator {
         // 새로 생성될 때 블럭 위치 설정
         Variables.dx = 4
         Variables.dy = 2
-        Variables.brickValue = Brick().bricks()
+        
+        // nextbrick에서 10가지 생성된 것들 중 첫번째 것 띄우기
+        Variables.brickValue = Variables.newBrickArrays[0]
         
         let brickValue = Variables.brickValue
         let brick = brickValue.points
