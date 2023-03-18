@@ -159,7 +159,10 @@ class DownButton {
         if deadLine > 2 {
             return true
         } else{
-            let scene = GameOver(fileNamed: "GameOver")
+            if let scene = GameOver(fileNamed: "GameOver"){
+                let transition = SKTransition.moveIn(with: .right, duration: 1)
+                Variables.scene.view?.presentScene(scene , transition: transition)
+            }
             return false
         }
     }
