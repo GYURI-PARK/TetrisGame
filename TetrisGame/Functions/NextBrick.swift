@@ -20,6 +20,7 @@ class NextBrick {
             xValue += 100
             brickGenerator(brickSpace: xValue)
         }
+        Variables.nodeGroup.remove(at: 0)
         for bricks in Variables.nodeGroup{
             for item in bricks{
                 Variables.scene.addChild(item)
@@ -38,7 +39,7 @@ class NextBrick {
             brick.size = CGSize(width: CGFloat(blockValue.brickSize / 2) - 2, height: CGFloat(blockValue.brickSize / 2) - 2)
             brick.color = blockValue.color
             brick.name = "nextBrick"
-            let xValue = x * CGFloat(blockValue.brickSize / 2) + brickSpace - 50
+            let xValue = x * CGFloat(blockValue.brickSize / 2) + brickSpace - 150
             let yValue = y * CGFloat(blockValue.brickSize / 2) + yPosition
             brick.position = CGPoint(x: xValue, y: -yValue)
             nextBricksArrays.append(brick)
