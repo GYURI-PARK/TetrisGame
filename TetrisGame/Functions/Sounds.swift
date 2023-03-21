@@ -37,4 +37,11 @@ class Sounds {
             buttonSound.play()
         }
     }
+    
+    func soundStop(){
+        bgSound.pause()
+    }
+    func soundPlay(){
+        bgSound.play()
+    }
 }

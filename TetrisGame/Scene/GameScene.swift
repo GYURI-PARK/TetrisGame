@@ -78,6 +78,11 @@ class GameScene: SKScene {
             }
             if item.name == "stop"{
                 stopButton?.brickStop()
+                if !Variables.isPause{
+                    sounds?.soundPlay()
+                }else{
+                    sounds?.soundStop()
+                }
             }
         }
     }
