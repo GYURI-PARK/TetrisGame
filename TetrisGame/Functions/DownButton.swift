@@ -110,6 +110,8 @@ class DownButton {
                 Variables.backarrays.remove(at: y)
                 Variables.backarrays.insert([2,0,0,0,0,0,0,0,0,2], at: 1)
                 print("삭제되었습니다.")
+                // 삭제 효과음
+                Variables.blockedArrays.first?.run(SKAction.playSoundFileNamed("delete.wav", waitForCompletion: false))
                 
                 for item in Variables.blockedArrays{
                     // 없어지는 라인이 같은 라인에 있는 경우

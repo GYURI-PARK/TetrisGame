@@ -31,6 +31,8 @@
 		5DDFEF0829C983F600347307 /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0329C983F600347307 /* bg_sound.mp3 */; };
 		5DDFEF0929C983F600347307 /* rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0429C983F600347307 /* rotation.mp3 */; };
 		5DDFEF0A29C983F600347307 /* move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0529C983F600347307 /* move.mp3 */; };
+		5DDFEF1329C98D0900347307 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF1129C98D0900347307 /* Fire.sks */; };
+		5DDFEF1429C98D0900347307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF1229C98D0900347307 /* Assets.xcassets */; };
 		5DF5073C29C57B7C00AF9130 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073B29C57B7C00AF9130 /* StopButton.swift */; };
 		5DF5073E29C5C5D900AF9130 /* NextBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073D29C5C5D900AF9130 /* NextBrick.swift */; };
 		5DF5074029C6235400AF9130 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073F29C6235400AF9130 /* Sounds.swift */; };
@@ -89,6 +91,8 @@
 		5DDFEF0E29C9842B00347307 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = move.mp3; sourceTree = "<group>"; };
 		5DDFEF0F29C9842B00347307 /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		5DDFEF1029C9842B00347307 /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = down.mp3; sourceTree = "<group>"; };
+		5DDFEF1129C98D0900347307 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		5DDFEF1229C98D0900347307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DF5073B29C57B7C00AF9130 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
 		5DF5073D29C5C5D900AF9130 /* NextBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBrick.swift; sourceTree = "<group>"; };
 		5DF5073F29C6235400AF9130 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		5DA20AEE29A7B95600CDCBB7 = {
 			isa = PBXGroup;
 			children = (
+				5DDFEF1229C98D0900347307 /* Assets.xcassets */,
 				5DA20AF929A7B95600CDCBB7 /* TetrisGame */,
 				5DA20B1329A7B95700CDCBB7 /* TetrisGameTests */,
 				5DA20B1D29A7B95700CDCBB7 /* TetrisGameUITests */,
@@ -142,6 +147,7 @@
 		5DA20AF929A7B95600CDCBB7 /* TetrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				5DDFEF1529C98EA000347307 /* emitter */,
 				5DDFEF0B29C9841A00347307 /* sounds */,
 				5DCFF4AC29C31761008F94C1 /* Scene */,
 				5DC78BD529BE162E00DD85D5 /* Info.plist */,
@@ -233,6 +239,14 @@
 				5DDFEF0D29C9842B00347307 /* rotation.mp3 */,
 			);
 			path = sounds;
+			sourceTree = "<group>";
+		};
+		5DDFEF1529C98EA000347307 /* emitter */ = {
+			isa = PBXGroup;
+			children = (
+				5DDFEF1129C98D0900347307 /* Fire.sks */,
+			);
+			path = emitter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +355,9 @@
 			files = (
 				5DA20B0629A7B95600CDCBB7 /* Main.storyboard in Resources */,
 				5DDFEF0729C983F600347307 /* delete.wav in Resources */,
+				5DDFEF1429C98D0900347307 /* Assets.xcassets in Resources */,
 				5DDFEF0A29C983F600347307 /* move.mp3 in Resources */,
+				5DDFEF1329C98D0900347307 /* Fire.sks in Resources */,
 				5DDFEF0929C983F600347307 /* rotation.mp3 in Resources */,
 				5DDFEF0829C983F600347307 /* bg_sound.mp3 in Resources */,
 				5DDFEF0629C983F600347307 /* down.mp3 in Resources */,
