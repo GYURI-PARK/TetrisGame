@@ -16,6 +16,7 @@ class GameScene: SKScene {
     var rotationButton : RotationButton?
     var downButton : DownButton?
     var stopButton : StopButton?
+    var sounds : Sounds?
     var updateTime = 0.0
     
     override func didMove(to view: SKView) {
@@ -34,6 +35,7 @@ class GameScene: SKScene {
         rotationButton = RotationButton()
         downButton = DownButton()
         stopButton = StopButton()
+        sounds = Sounds()
     }
     
     // 콘솔창에서 배열 확인 편하게 하려고 만드는거

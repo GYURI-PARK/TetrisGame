@@ -26,6 +26,11 @@
 		5DC78BD929BF653100DD85D5 /* RightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC78BD829BF653100DD85D5 /* RightButton.swift */; };
 		5DCFF4AE29C3179C008F94C1 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCFF4AD29C3179C008F94C1 /* GameOver.swift */; };
 		5DCFF4B029C317CB008F94C1 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DCFF4AF29C317CB008F94C1 /* GameOver.sks */; };
+		5DDFEF0629C983F600347307 /* down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0129C983F600347307 /* down.mp3 */; };
+		5DDFEF0729C983F600347307 /* delete.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0229C983F600347307 /* delete.wav */; };
+		5DDFEF0829C983F600347307 /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0329C983F600347307 /* bg_sound.mp3 */; };
+		5DDFEF0929C983F600347307 /* rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0429C983F600347307 /* rotation.mp3 */; };
+		5DDFEF0A29C983F600347307 /* move.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5DDFEF0529C983F600347307 /* move.mp3 */; };
 		5DF5073C29C57B7C00AF9130 /* StopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073B29C57B7C00AF9130 /* StopButton.swift */; };
 		5DF5073E29C5C5D900AF9130 /* NextBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073D29C5C5D900AF9130 /* NextBrick.swift */; };
 		5DF5074029C6235400AF9130 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF5073F29C6235400AF9130 /* Sounds.swift */; };
@@ -74,6 +79,16 @@
 		5DC78BD829BF653100DD85D5 /* RightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightButton.swift; sourceTree = "<group>"; };
 		5DCFF4AD29C3179C008F94C1 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		5DCFF4AF29C317CB008F94C1 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
+		5DDFEF0129C983F600347307 /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = down.mp3; path = ../../../../../Downloads/source/sound/down.mp3; sourceTree = "<group>"; };
+		5DDFEF0229C983F600347307 /* delete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = delete.wav; path = ../../../../../Downloads/source/sound/delete.wav; sourceTree = "<group>"; };
+		5DDFEF0329C983F600347307 /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bg_sound.mp3; path = ../../../../../Downloads/source/sound/bg_sound.mp3; sourceTree = "<group>"; };
+		5DDFEF0429C983F600347307 /* rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rotation.mp3; path = ../../../../../Downloads/source/sound/rotation.mp3; sourceTree = "<group>"; };
+		5DDFEF0529C983F600347307 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = move.mp3; path = ../../../../../Downloads/source/sound/move.mp3; sourceTree = "<group>"; };
+		5DDFEF0C29C9842B00347307 /* delete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = delete.wav; sourceTree = "<group>"; };
+		5DDFEF0D29C9842B00347307 /* rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rotation.mp3; sourceTree = "<group>"; };
+		5DDFEF0E29C9842B00347307 /* move.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = move.mp3; sourceTree = "<group>"; };
+		5DDFEF0F29C9842B00347307 /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
+		5DDFEF1029C9842B00347307 /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = down.mp3; sourceTree = "<group>"; };
 		5DF5073B29C57B7C00AF9130 /* StopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopButton.swift; sourceTree = "<group>"; };
 		5DF5073D29C5C5D900AF9130 /* NextBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBrick.swift; sourceTree = "<group>"; };
 		5DF5073F29C6235400AF9130 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
@@ -127,6 +142,7 @@
 		5DA20AF929A7B95600CDCBB7 /* TetrisGame */ = {
 			isa = PBXGroup;
 			children = (
+				5DDFEF0B29C9841A00347307 /* sounds */,
 				5DCFF4AC29C31761008F94C1 /* Scene */,
 				5DC78BD529BE162E00DD85D5 /* Info.plist */,
 				5DC78BD029BA481800DD85D5 /* Functions */,
@@ -134,6 +150,11 @@
 				5DC76A4F29A7BDF500A0A596 /* Background */,
 				5DA20AFA29A7B95600CDCBB7 /* AppDelegate.swift */,
 				5DA20B0229A7B95600CDCBB7 /* GameViewController.swift */,
+				5DDFEF0329C983F600347307 /* bg_sound.mp3 */,
+				5DDFEF0229C983F600347307 /* delete.wav */,
+				5DDFEF0129C983F600347307 /* down.mp3 */,
+				5DDFEF0529C983F600347307 /* move.mp3 */,
+				5DDFEF0429C983F600347307 /* rotation.mp3 */,
 				5DA20B0429A7B95600CDCBB7 /* Main.storyboard */,
 				5DA20B0729A7B95700CDCBB7 /* Assets.xcassets */,
 				5DA20B0929A7B95700CDCBB7 /* LaunchScreen.storyboard */,
@@ -200,6 +221,18 @@
 				5DCFF4AF29C317CB008F94C1 /* GameOver.sks */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		5DDFEF0B29C9841A00347307 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5DDFEF0F29C9842B00347307 /* bg_sound.mp3 */,
+				5DDFEF0C29C9842B00347307 /* delete.wav */,
+				5DDFEF1029C9842B00347307 /* down.mp3 */,
+				5DDFEF0E29C9842B00347307 /* move.mp3 */,
+				5DDFEF0D29C9842B00347307 /* rotation.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +340,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DA20B0629A7B95600CDCBB7 /* Main.storyboard in Resources */,
+				5DDFEF0729C983F600347307 /* delete.wav in Resources */,
+				5DDFEF0A29C983F600347307 /* move.mp3 in Resources */,
+				5DDFEF0929C983F600347307 /* rotation.mp3 in Resources */,
+				5DDFEF0829C983F600347307 /* bg_sound.mp3 in Resources */,
+				5DDFEF0629C983F600347307 /* down.mp3 in Resources */,
 				5DCFF4B029C317CB008F94C1 /* GameOver.sks in Resources */,
 				5DA20B0829A7B95700CDCBB7 /* Assets.xcassets in Resources */,
 				5DA20B0B29A7B95700CDCBB7 /* LaunchScreen.storyboard in Resources */,
