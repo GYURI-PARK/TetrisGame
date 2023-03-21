@@ -20,7 +20,10 @@ class GameScene: SKScene {
     var updateTime = 0.0
     
     override func didMove(to view: SKView) {
-        
+        setting()
+    }
+    
+    func setting(){
         Variables.scene = self
         // scene 초기화
         
@@ -28,7 +31,6 @@ class GameScene: SKScene {
         // 만들어진 2차배열을 다른곳에서도 사용 가능하도록 전역변수로 설정
         NextBrick().addBrick()
         _ = BrickGenerator()
-        // checkBrick()
         
         leftButton = LeftButton()
         rightButton = RightButton()
@@ -36,14 +38,6 @@ class GameScene: SKScene {
         downButton = DownButton()
         stopButton = StopButton()
         sounds = Sounds()
-    }
-    
-    // 콘솔창에서 배열 확인 편하게 하려고 만드는거
-    func checkBrick(){
-        let arrays = Variables.backarrays
-        for item in arrays{
-            print(item)
-        }
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -66,17 +60,21 @@ class GameScene: SKScene {
         for item in node{
             if item.name == "left"{
                 leftButton?.brickMoveLeft()
+                sounds?.buttonSounds(buttonName: "move")
             }
             if item.name == "right"{
                 rightButton?.brickMoveRight()
+                sounds?.buttonSounds(buttonName: "move")
             }
             if item.name == "rotation"{
                 rotationButton?.brickRoation()
+                sounds?.buttonSounds(buttonName: "rotation")
             }
             if item.name == "down"{
                 while(downButton?.isbrickDownable())! {
                     downButton?.brickDown()
                 }
+                sounds?.buttonSounds(buttonName: "down")
             }
             if item.name == "stop"{
                 stopButton?.brickStop()
